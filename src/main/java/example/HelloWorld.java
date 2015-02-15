@@ -1,7 +1,7 @@
 package example;
-import com.sun.net.httpserver.HttpServer;
-import com.sun.jersey.api.container.httpserver.HttpServerFactory;
-import java.io.IOException;
+//import com.sun.net.httpserver.HttpServer;
+//import com.sun.jersey.api.container.httpserver.HttpServerFactory;
+//import java.io.IOException;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
@@ -22,7 +22,7 @@ public class HelloWorld {
         return "Hello World";
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         HttpServer server = HttpServerFactory.create("http://localhost:9998/");
         server.start();
 
@@ -33,5 +33,5 @@ public class HelloWorld {
         System.out.println("Stopping server");
         server.stop(0);
         System.out.println("Server stopped");
-    }
+    }*/
 }
