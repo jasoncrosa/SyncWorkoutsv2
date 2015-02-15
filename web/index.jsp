@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title></title>
+    <title>Sync Workouts !</title>
   </head>
   <body>
-
+    <h1>Sync Workouts !</h1>
   </body>
 </html>
