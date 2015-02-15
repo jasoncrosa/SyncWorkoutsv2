@@ -16,7 +16,7 @@
 
     <properties>
         <version.appengine.app>1</version.appengine.app>
-        <version.appengine.target>1.7.5</version.appengine.target>
+        <version.appengine.target>1.8.3</version.appengine.target>
         <version.jersey>1.18.3</version.jersey>
         <version.jstl>1.2</version.jstl>
         <version.servlet-api>2.5</version.servlet-api>
@@ -44,6 +44,11 @@
             <dependency>
                 <groupId>com.sun.jersey</groupId>
                 <artifactId>jersey-server</artifactId>
+                <version>${version.jersey}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-servlet</artifactId>
                 <version>${version.jersey}</version>
             </dependency>
             <dependency>
