@@ -8,6 +8,7 @@ import com.wordnik.swagger.annotations.ApiResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * Created by Jason on 15/02/2015.
@@ -20,7 +21,7 @@ public class HelloWorld {
     @GET
     @Path("world")
     // The Java method will produce content identified by the MIME Media type "text/plain"
-    @Produces("text/plain")
+    @Produces( {MediaType.APPLICATION_JSON} )
     @ApiOperation(value="Hello World",
             notes="Hello World with REST",
             response=String.class,
@@ -35,7 +36,14 @@ public class HelloWorld {
 
     @GET
     @Path("auth")
-    @Produces("text/plain")
+    @Produces( {MediaType.APPLICATION_JSON} )
+    @ApiOperation(value="Auth",
+            notes="REST Authentication",
+            response=String.class,
+            responseContainer = "")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "OK"),
+            @ApiResponse(code = 500, message = "Something wrong in Server")})
     public String auth() {
         try {
 
